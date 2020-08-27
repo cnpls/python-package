@@ -6,9 +6,9 @@ Template repository for building python packages and publishing to pypi.
 
 ## Instructions
 
-1. Rename `package/`.
+1. Rename `package/`
 
-2. Update `setup.py`.
+2. Update `setup.py`
 
 ```python
 from setuptools import setup, find_packages
