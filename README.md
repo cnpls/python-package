@@ -1,4 +1,4 @@
-![Python package](https://github.com/fingafrog/python-package/workflows/Python%20package/badge.svg)
+![Python package](https://github.com/cnpls/python-package/workflows/Python%20package/badge.svg)
 
 # python-package
 
