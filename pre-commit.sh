@@ -14,5 +14,6 @@ echo "removing pre-commit venv"
 rm -rf pre-commit-venv
 
 echo "updating docs"
+mkdir docs
 # TODO: not working
 venv/scripts/python.exe -m pydoc-markdown -I package --render-toc > docs/docs.md
