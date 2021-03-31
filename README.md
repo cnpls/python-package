@@ -46,4 +46,8 @@ setup(name='package', # rename package here
 
 4. Update `README.md`
 
+5. Update `publish.sh`
+
+6. Update `serve-docs.sh`
+
 3. :rocket:
