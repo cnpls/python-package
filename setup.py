@@ -59,5 +59,5 @@ setup(name='package',
     license='MIT',
     packages=find_packages(),
     install_requires=install_requires,
-    classifiers=[_f for _f in CLASSIFIERS.split("\n") if _f],
+    classifiers=[_ for _ in CLASSIFIERS.split("\n") if _],
     zip_safe=False)
