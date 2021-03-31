@@ -48,7 +48,7 @@ with open(os.path.join(project_root, "requirements.txt")) as f:
     install_requires = f.read().splitlines()
 
 
-setup(name='package',
+setup(name=NAME,
     version=find_version(os.path.join(project_root, NAME, "__init__.py")),
     description='',
     long_description=long_description,
