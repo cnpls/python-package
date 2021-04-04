@@ -50,4 +50,6 @@ setup(name='package', # rename package here
 
 6. Update `serve-docs.sh`
 
-3. :rocket:
+7. Update `pre-commit.sh`
+
+8. :rocket:
