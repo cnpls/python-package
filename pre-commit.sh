@@ -1,19 +1,19 @@
-echo "running install check"
+echo "Running install check"
 rm -rf pre-commit-venv
 python -m venv pre-commit-venv
 pre-commit-venv/scripts/python.exe -m pip install --upgrade pip
 pre-commit-venv/scripts/python.exe -m pip install .
 
-echo "running formatting, linting, tests"
+echo "Running formatting, linting, tests"
 pre-commit-venv/scripts/python.exe -m pip install -r requirements-dev.txt
 pre-commit-venv/scripts/python.exe -m black package tests setup.py
 pre-commit-venv/scripts/python.exe -m flake8 package tests setup.py
 pre-commit-venv/scripts/python.exe -m pytest
 
-echo "removing pre-commit venv"
+echo "Removing pre-commit venv"
 rm -rf pre-commit-venv
 
-echo "updating docs"
+echo "Updating docs"
 mkdir docs
 
 # TODO: not working
