@@ -4,21 +4,8 @@ import re
 
 from setuptools import setup, find_packages
 
+
 NAME = "package"
-CLASSIFIERS = """\
-Intended Audience :: Developers
-License :: OSI Approved :: MIT License
-Programming Language :: Python
-Programming Language :: Python :: 3
-Programming Language :: Python :: 3.6
-Programming Language :: Python :: 3.7
-Programming Language :: Python :: 3.8
-Programming Language :: Python :: 3.9
-Topic :: Software Development
-Operating System :: Microsoft :: Windows
-Operating System :: Unix
-Operating System :: MacOS
-"""
 
 
 # https://packaging.python.org/guides/single-sourcing-package-version/
@@ -59,5 +46,20 @@ setup(name=NAME,
     license='MIT',
     packages=find_packages(),
     install_requires=install_requires,
-    classifiers=[_ for _ in CLASSIFIERS.split("\n") if _],
-    zip_safe=False)
+    classifiers=[
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Topic :: Software Development",
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: Unix",
+        "Operating System :: MacOS",
+    ],
+    zip_safe=False,
+    python_requires=">=3.6",
+ )
