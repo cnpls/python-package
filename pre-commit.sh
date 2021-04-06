@@ -1,13 +1,13 @@
 echo "Running install check"
 rm -rf pre-commit-venv
 python -m venv pre-commit-venv
-pre-commit-venv/scripts/python.exe -m pip install --upgrade pip
-pre-commit-venv/scripts/python.exe -m pip install .
+pre-commit-venv/scripts/python.exe-m pip install --upgrade pip
+pre-commit-venv/scripts/pip install .
 
 echo "Running formatting, linting, tests"
-pre-commit-venv/scripts/python.exe -m pip install -r requirements-dev.txt
-pre-commit-venv/scripts/python.exe -m black package tests setup.py
-pre-commit-venv/scripts/python.exe -m flake8 package tests setup.py
+pre-commit-venv/scripts/pip install -r requirements.txt -r requirements-dev.txt
+pre-commit-venv/scripts/python.exe -m black skadoo tests setup.py
+pre-commit-venv/scripts/python.exe -m flake8 skadoo tests setup.py
 pre-commit-venv/scripts/python.exe -m pytest
 
 echo "Removing pre-commit venv"
