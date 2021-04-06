@@ -15,5 +15,8 @@ rm -rf pre-commit-venv
 
 echo "updating docs"
 mkdir docs
+
 # TODO: not working
+echo "pydoc-markdown not working in .sh"
+echo "Run -> venv/scripts/python.exe -m pydoc-markdown -I package --render-toc > docs/docs.md"
 venv/scripts/python.exe -m pydoc-markdown -I package --render-toc > docs/docs.md
