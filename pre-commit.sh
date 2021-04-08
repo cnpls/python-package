@@ -16,7 +16,7 @@ echo "Removing pre-commit venv"
 rm -rf pre-commit-venv
 
 echo "Updating docs"
-mkdir docs
+if ! [ -d docs ]; then mkdir docs; fi
 
 # TODO: not working
 echo "pydoc-markdown not working in .sh"
