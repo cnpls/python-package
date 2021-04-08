@@ -1,3 +1,5 @@
+set -e
+
 echo "Running install check"
 rm -rf pre-commit-venv
 python -m venv pre-commit-venv
