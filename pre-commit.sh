@@ -21,4 +21,4 @@ if ! [ -d docs ]; then mkdir docs; fi
 # TODO: not working
 echo "pydoc-markdown not working in .sh"
 echo "Run -> pydoc-markdown -I package --render-toc > docs/README.md"
-venv/scripts/python.exe -m pydoc-markdown -I package --render-toc > docs/README.md
+#venv/scripts/python.exe -m pydoc-markdown -I package --render-toc > docs/README.md

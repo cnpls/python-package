@@ -19,7 +19,9 @@ def read(*names, **kwargs):
 
 def find_version(*file_paths):
     version_file = read(*file_paths)
-    version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", version_file, re.M)
+    version_match = re.search(
+        r"^__version__ = ['\"]([^'\"]*)['\"]", version_file, re.M
+    )
     if version_match:
         return version_match.group(1)
 
@@ -38,13 +40,13 @@ with open(os.path.join(project_root, "requirements.txt")) as f:
 setup(
     name=NAME,
     version=find_version(os.path.join(project_root, NAME, "__init__.py")),
-    description='',
+    description="",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='',
-    author='',
-    author_email='',
-    license='MIT',
+    url="",
+    author="",
+    author_email="",
+    license="MIT",
     packages=find_packages(),
     install_requires=install_requires,
     classifiers=[
@@ -63,4 +65,4 @@ setup(
     ],
     zip_safe=False,
     python_requires=">=3.6",
- )
+)

@@ -1,5 +1,7 @@
-rm -rf venv
-python -m venv venv
+echo "Creating virtual environment"
+if ! [ -d venv ]; then python -m venv venv; fi
+
+echo "Installing dependancies"
 venv/scripts/python.exe -m pip install --upgrade pip
 venv/scripts/pip install -r requirements.txt -r requirements-dev.txt
 
