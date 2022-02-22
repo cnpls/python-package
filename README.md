@@ -2,7 +2,7 @@
 
 # python-package
 
-Template repository for building python packages and publishing to pypi.
+Template repository for building python packages and publishing to pypi. **Note: for packages you intend to maintain maximum distribution for it's recommended to use tooling like `poetry`**.
 
 ## Instructions
 
@@ -23,7 +23,8 @@ install_requires = []
 with open("./requirements.txt") as f:
     install_requires = f.read().splitlines()
 
-setup(name="package", # rename package here
+setup(
+    name="package", # rename package here
     version=__version__,
     description="", # add a short description here
     long_description=long_description,
@@ -39,7 +40,8 @@ setup(name="package", # rename package here
                 "package = package.main:main" # rename package, point at a function
             ]
         },
-    zip_safe=False)
+    zip_safe=False
+)
 ```
 
 3. [Update your status badge](https://docs.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow#adding-a-workflow-status-badge-to-your-repository)
